@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header"
+import Backdrop from "./components/Backdrop";
+import Part1 from "./components/Part1";
+import Backers from "./components/Backers";
+import About from "./components/About";
+//import Modal from "./components/Modal";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Header />
+    <Backdrop />
+   {/*<Modal /> */}
+    <Part1 />
+    <Backers />
+    <About />
+    
+    </>
+  )
 }
+
+
+  
 
 export default App;
